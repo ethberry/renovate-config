@@ -1,0 +1,77 @@
+{
+  "extends": [
+    "config:base",
+    ":disableRateLimiting",
+    ":semanticCommits",
+    "group:allNonMajor"
+  ],
+  "timezone": "Asia/Singapore",
+  "schedule": [
+    "before 5am on Saturday"
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": ["husky"],
+      "allowedVersions": "<=4.3.8"
+    },
+    {
+      "matchPackageNames": ["ipfs-http-client"],
+      "allowedVersions": "<=56.0.3"
+    },
+    {
+      "matchPackageNames": ["@openzeppelin/contracts"],
+      "allowedVersions": "<5.1.0"
+    },
+    {
+      "matchPackageNames": ["@openzeppelin/contracts-upgradeable"],
+      "allowedVersions": "<5.1.0"
+    },
+    {
+      "matchDepNames": ["node"],
+      "allowedVersions": "<=22"
+    },
+    {
+      "updateTypes": [
+        "major",
+        "minor",
+        "patch"
+      ],
+      "automerge": false
+    },
+    {
+      "updateTypes": [
+        "major"
+      ],
+      "masterIssueApproval": true
+    },
+    {
+      "matchPackagePrefixes": ["@framework/"],
+      "enabled": false
+    },
+    {
+      "matchPackagePrefixes": ["@ethberry/"],
+      "commitMessageTopic": "EthBerry",
+      "groupName": "@EthBerry packages",
+      "groupSlug": "ethberry-packages",
+      "rollbackPrs": false
+    },
+    {
+      "matchPackagePrefixes": ["@mui/"],
+      "commitMessageTopic": "MaterialUI",
+      "groupName": "@MUI packages",
+      "groupSlug": "mui-packages"
+    },
+    {
+      "matchPackagePrefixes": ["@nestjs/"],
+      "commitMessageTopic": "NestJS",
+      "groupName": "@NestJS packages",
+      "groupSlug": "nestjs-packages"
+    }
+  ],
+  "major": {
+    "masterIssueApproval": true
+  },
+  "dependencyDashboard": true,
+  "npmrc": "@ethberry:registry=https://npm.pkg.github.com/",
+  "npmrcMerge": true
+}
