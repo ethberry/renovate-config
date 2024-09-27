@@ -28,7 +28,7 @@
     },
     {
       "matchDepNames": ["node"],
-      "allowedVersions": "<=22"
+      "allowedVersions": "<=23"
     },
     {
       "updateTypes": [
