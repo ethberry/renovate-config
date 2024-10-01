@@ -11,10 +11,6 @@
   ],
   "packageRules": [
     {
-      "matchPackageNames": ["husky"],
-      "allowedVersions": "<=4.3.8"
-    },
-    {
       "matchPackageNames": ["ipfs-http-client"],
       "allowedVersions": "<=56.0.3"
     },
