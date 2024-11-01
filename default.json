@@ -8,5 +8,11 @@
       "hostType": "npm",
       "token": "{{ secrets.GITHUB_TOKEN_ETHBERRY }}"
     }
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    }
   ]
 }
