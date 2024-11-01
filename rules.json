@@ -27,6 +27,10 @@
       "allowedVersions": ">=22 <=23"
     },
     {
+      "matchDepNames": ["@types/express"],
+      "allowedVersions": "<5.0.0"
+    },
+    {
       "updateTypes": [
         "major",
         "minor",
