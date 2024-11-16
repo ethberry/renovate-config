@@ -15,14 +15,6 @@
       "allowedVersions": "<=56.0.3"
     },
     {
-      "matchPackageNames": ["@openzeppelin/contracts"],
-      "allowedVersions": "<5.1.0"
-    },
-    {
-      "matchPackageNames": ["@openzeppelin/contracts-upgradeable"],
-      "allowedVersions": "<5.1.0"
-    },
-    {
       "matchDepNames": ["node"],
       "allowedVersions": ">=22 <=23"
     },
