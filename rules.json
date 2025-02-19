@@ -15,6 +15,10 @@
       "allowedVersions": ">=22 <=23"
     },
     {
+      "matchDepNames": ["@liaoliaots/nestjs-redis"],
+      "allowedVersions": "<10"
+    },
+    {
       "updateTypes": [
         "major",
         "minor",
