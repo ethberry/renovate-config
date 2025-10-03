@@ -19,6 +19,10 @@
       "allowedVersions": "<10"
     },
     {
+      "matchDepNames": ["lerna"],
+      "allowedVersions": "<9"
+    },
+    {
       "updateTypes": [
         "major",
         "minor",
