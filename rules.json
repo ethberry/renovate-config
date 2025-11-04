@@ -58,6 +58,12 @@
       "commitMessageTopic": "NestJS",
       "groupName": "@NestJS packages",
       "groupSlug": "nestjs-packages"
+    },
+    {
+      "matchPackagePrefixes": ["@storybook/"],
+      "commitMessageTopic": "Storybook",
+      "groupName": "@Storybook packages",
+      "groupSlug": "storybook"
     }
   ],
   "major": {
