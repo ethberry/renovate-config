@@ -60,6 +60,12 @@
       "groupSlug": "nestjs-packages"
     },
     {
+      "matchPackagePrefixes": ["@lexical/"],
+      "commitMessageTopic": "Lexical",
+      "groupName": "@Lexical packages",
+      "groupSlug": "lexical"
+    },
+    {
       "matchPackagePrefixes": ["@storybook/"],
       "commitMessageTopic": "Storybook",
       "groupName": "@Storybook packages",
