@@ -57,12 +57,14 @@
     },
     {
       "matchPackagePrefixes": ["@lexical/"],
+      "matchPackageNames": ["lexical"],
       "commitMessageTopic": "Lexical",
       "groupName": "@Lexical packages",
       "groupSlug": "lexical"
     },
     {
       "matchPackagePrefixes": ["@storybook/"],
+      "matchPackageNames": ["storybook"],
       "commitMessageTopic": "Storybook",
       "groupName": "@Storybook packages",
       "groupSlug": "storybook"
