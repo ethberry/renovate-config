@@ -15,6 +15,10 @@
       "allowedVersions": "<=24"
     },
     {
+      "matchDepNames": ["@ethberry/eslint-config"],
+      "allowedVersions": "<6"
+    },
+    {
       "matchDepNames": ["@liaoliaots/nestjs-redis"],
       "allowedVersions": "<10"
     },
