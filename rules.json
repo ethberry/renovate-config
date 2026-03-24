@@ -6,6 +6,7 @@
     "group:allNonMajor"
   ],
   "timezone": "Asia/Singapore",
+  "updateNotScheduled": false,
   "schedule": [
     "before 5am on Saturday"
   ],
