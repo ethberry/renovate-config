@@ -12,18 +12,6 @@
   ],
   "packageRules": [
     {
-      "matchDepNames": ["node"],
-      "allowedVersions": "<=24"
-    },
-    {
-      "matchDepNames": ["@ethberry/eslint-config"],
-      "allowedVersions": "<6"
-    },
-    {
-      "matchDepNames": ["@liaoliaots/nestjs-redis"],
-      "allowedVersions": "<10"
-    },
-    {
       "updateTypes": [
         "major",
         "minor",
@@ -38,8 +26,16 @@
       "masterIssueApproval": true
     },
     {
+      "matchDepNames": ["@ethberry/eslint-config"],
+      "allowedVersions": "<6"
+    },
+    {
+      "matchDepNames": ["@liaoliaots/nestjs-redis"],
+      "allowedVersions": "<10"
+    },
+    {
       "matchPackageNames": ["@types/node"],
-      "allowedVersions": "<=25"
+      "allowedVersions": "<25"
     },
     {
       "matchPackageNames": ["cron"],
