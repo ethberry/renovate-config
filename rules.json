@@ -5,7 +5,7 @@
     ":semanticCommits",
     "group:allNonMajor"
   ],
-  "timezone": "Asia/Singapore",
+  "timezone": "Asia/Tbilisi",
   "updateNotScheduled": false,
   "schedule": [
     "before 5am on Saturday"
@@ -36,6 +36,16 @@
         "major"
       ],
       "masterIssueApproval": true
+    },
+    {
+      "matchPackageNames": ["@types/node"],
+      "allowedVersions": "<=25"
+    },
+    {
+      "matchPackageNames": ["cron"],
+      "groupName": "@NestJS packages",
+      "rangeStrategy": "replace",
+      "enabled": false
     },
     {
       "matchPackagePrefixes": ["@framework/"],
