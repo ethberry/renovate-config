@@ -38,6 +38,16 @@
       "allowedVersions": "<25"
     },
     {
+      "description": "TypeScript stays on 5.x: the toolchain (ts-jest, typescript-eslint, NestJS, webpack) is not moved to 6.x yet.",
+      "matchPackageNames": ["typescript"],
+      "allowedVersions": "<6"
+    },
+    {
+      "description": "Node.js stays on 24 (.nvmrc, engines, Docker images, CI node-version).",
+      "matchPackageNames": ["node"],
+      "allowedVersions": "<25"
+    },
+    {
       "matchPackageNames": ["cron"],
       "groupName": "@NestJS packages",
       "rangeStrategy": "replace",
