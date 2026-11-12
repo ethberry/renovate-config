@@ -43,6 +43,11 @@
       "allowedVersions": "<6"
     },
     {
+      "description": "Node.js stays on 24 (.nvmrc, engines, Docker images, CI node-version).",
+      "matchPackageNames": ["node"],
+      "allowedVersions": "<25"
+    },
+    {
       "matchPackageNames": ["cron"],
       "groupName": "@NestJS packages",
       "rangeStrategy": "replace",
