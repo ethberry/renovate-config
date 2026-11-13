@@ -26,6 +26,11 @@
       "masterIssueApproval": true
     },
     {
+      "description": "A peer range stays a single range. Renovate's \"auto\" strategy widens peerDependencies, which appends \"|| ^next\" instead of replacing the range, so a package ends up declaring support for majors it was never tested against.",
+      "matchDepTypes": ["peerDependencies"],
+      "rangeStrategy": "replace"
+    },
+    {
       "matchDepNames": ["@ethberry/eslint-config"],
       "allowedVersions": "<6"
     },
