@@ -100,6 +100,17 @@
   "major": {
     "masterIssueApproval": true
   },
+  "npm": {
+    "description": [
+      "Workaround: lockfiles are regenerated with npm 11, not npm 12.",
+      "npm 12 defaults to allow-remote=none and, because of a bug, treats the registry tarball of a package with bundleDependencies as a remote download, so `npm install --package-lock-only` fails with EALLOWREMOTE and the PR gets a failed renovate/artifacts check.",
+      "Seen on @tailwindcss/oxide-wasm32-wasi (optional dependency of tailwindcss 4) in TrejGun/nestjs-langchain-demo; reproduced with npm 12.2.3, npm 11 works.",
+      "Remove this once https://github.com/npm/cli/issues/9800 is fixed in a released npm 12."
+    ],
+    "constraints": {
+      "npm": "<12"
+    }
+  },
   "dependencyDashboard": true,
   "npmrc": "@ethberry:registry=https://npm.pkg.github.com/",
   "npmrcMerge": true
