@@ -39,8 +39,9 @@
       "allowedVersions": "<10"
     },
     {
+      "description": "Node.js types follow the runtime major (Node 26).",
       "matchPackageNames": ["@types/node"],
-      "allowedVersions": "<25"
+      "allowedVersions": "<27"
     },
     {
       "description": "TypeScript stays on 5.x: the toolchain (ts-jest, typescript-eslint, NestJS, webpack) is not moved to 6.x yet.",
@@ -48,9 +49,9 @@
       "allowedVersions": "<6"
     },
     {
-      "description": "Node.js stays on 24 (.nvmrc, engines, Docker images, CI node-version).",
+      "description": "Node.js stays on 26, the LTS line (.nvmrc, engines, Docker images, CI node-version).",
       "matchPackageNames": ["node"],
-      "allowedVersions": "<25"
+      "allowedVersions": "<27"
     },
     {
       "matchPackageNames": ["cron"],
